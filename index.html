@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Styshnev - Lead / Senior Software Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="description" content="Valentin Styshnev is a Lead / Senior Software Engineer specializing in Golang, C++, and Python. Expert in designing distributed systems, backend development, and team leadership.">
     <meta name="keywords" content="Valentin Styshnev, Software Engineer, Lead Engineer, Senior Software Engineer, Golang, C++, Python, Backend Developer, Distributed Systems">
     <meta name="author" content="Valentin Styshnev">
@@ -22,21 +21,26 @@
     <meta property="twitter:description" content="Lead / Senior Software Engineer specializing in Golang, C++, and Python.">
     <meta property="twitter:image" content="https://valentin.styshnev.ru/profile.jpg">
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="lang-toggle">
+        <button id="lang-switch" onclick="toggleLanguage()">RU</button>
+    </div>
+
     <div class="container">
         <header class="hero">
             <div class="profile-section">
                 <img src="profile.jpg" alt="Valentin Styshnev" class="profile-image">
-                <h1>Valentin Styshnev</h1>
-                <p class="title">Lead / Senior Software Engineer</p>
-                <p class="tagline">Results-driven Senior Software Engineer/Team Lead with expertise in Golang, C++ and Python. Proven ability to design and develop innovative applications for various platforms. Skilled in project management, team collaboration, and driving process optimization. Ready to lead and deliver exceptional software solutions to meet strategic objectives.</p>
+                <h1 data-i18n="name">Valentin Styshnev</h1>
+                <p class="title" data-i18n="title_sub">Lead / Senior Software Engineer</p>
+                <p class="tagline" data-i18n="tagline"></p>
             </div>
         </header>
 
         <section class="contact">
-            <h2>Get In Touch</h2>
+            <h2 data-i18n="contact_title">Get In Touch</h2>
             <div class="contact-grid">
                 <a href="mailto:vstyshnev.es@gmail.com" class="contact-item">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -48,122 +52,125 @@
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                     </svg>
-                    <span>LinkedIn</span>
+                    <span data-i18n="linkedin">LinkedIn</span>
                 </a>
                 <a href="https://github.com/valentin-styshnev" class="contact-item">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
-                    <span>GitHub</span>
+                    <span data-i18n="github">GitHub</span>
                 </a>
                 <a href="https://t.me/vstyshnev" class="contact-item">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                     </svg>
-                    <span>Telegram</span>
+                    <span data-i18n="telegram">Telegram</span>
                 </a>
             </div>
         </section>
 
         <section class="skills">
-            <h2>What I Do</h2>
+            <h2 data-i18n="skills_title">What I Do</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <h3>Backend Development</h3>
-                    <p>Golang, Python, C++, RESTful APIs, gRPC</p>
+                    <h3 data-i18n="skill_1_title">Backend Development</h3>
+                    <p data-i18n="skill_1_desc">Golang, Python, C++, RESTful APIs, gRPC</p>
                 </div>
                 <div class="skill-item">
-                    <h3>Database Design And Message Queues</h3>
-                    <p>PostgreSQL, Redis, Clickhouse, Kafka, RabbitMQ</p>
+                    <h3 data-i18n="skill_2_title">Database Design And Message Queues</h3>
+                    <p data-i18n="skill_2_desc">PostgreSQL, Redis, Clickhouse, Kafka, RabbitMQ</p>
                 </div>
                 <div class="skill-item">
-                    <h3>Project Management</h3>
-                    <p>Team Leadership, Scrum, Product Development, Client Relations</p>
+                    <h3 data-i18n="skill_3_title">Project Management</h3>
+                    <p data-i18n="skill_3_desc">Team Leadership, Scrum, Product Development, Client Relations</p>
                 </div>
                 <div class="skill-item">
-                    <h3>DevOps & Tools</h3>
-                    <p>Docker, Git, CI/CD, K8S, Gitlab, Linux</p>
+                    <h3 data-i18n="skill_4_title">DevOps & Tools</h3>
+                    <p data-i18n="skill_4_desc">Docker, Git, CI/CD, K8S, Gitlab, Linux</p>
                 </div>
                 <div class="skill-item">
-                    <h3>Mobile Development</h3>
-                    <p>Android app development</p>
+                    <h3 data-i18n="skill_5_title">Mobile Development</h3>
+                    <p data-i18n="skill_5_desc">Android app development</p>
                 </div>
                 <div class="skill-item">
-                    <h3>Desktop Development</h3>
-                    <p>Qt framework, Windows</p>
+                    <h3 data-i18n="skill_6_title">Desktop Development</h3>
+                    <p data-i18n="skill_6_desc">Qt framework, Windows</p>
                 </div>
             </div>
         </section>
 
         <section class="experience">
-            <h2>Experience</h2>
+            <h2 data-i18n="experience_title">Experience</h2>
             <div class="experience-list">
                 <div class="experience-item">
-                    <h3>Senior Software Engineer</h3>
-                    <p class="company">AB Handshake Corporation</p>
-                    <p class="duration">2022 - Present</p>
+                    <h3 data-i18n="exp_1_title">Senior Software Engineer</h3>
+                    <p class="company" data-i18n="exp_1_company">AB Handshake Corporation</p>
+                    <p class="duration" data-i18n="exp_1_duration">2022 - Present</p>
                     <ul>
-                        <li>Designed and spearheaded the development of a robust, distributed anti-fraud management system</li>
-                        <li>Pioneered the construction of high-performance backend applications using Go</li>
-                        <li>Demonstrated expertise in working with cutting-edge technologies, including Redis, Kafka, PostgreSQL, and gRPC</li>
-                        <li>Proficiently managed containerization and orchestration with Docker and Kubernetes</li>
-                        <li>Contributed to the adoption and integration of OpenAPI standards</li>
+                        <li data-i18n="exp_1_li_1">Designed and spearheaded the development of a robust, distributed anti-fraud management system</li>
+                        <li data-i18n="exp_1_li_2">Pioneered the construction of high-performance backend applications using Go</li>
+                        <li data-i18n="exp_1_li_3">Demonstrated expertise in working with cutting-edge technologies, including Redis, Kafka, PostgreSQL, and gRPC</li>
+                        <li data-i18n="exp_1_li_4">Proficiently managed containerization and orchestration with Docker and Kubernetes</li>
+                        <li data-i18n="exp_1_li_5">Contributed to the adoption and integration of OpenAPI standards</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <h3>Team Lead / Senior Software Engineer</h3>
-                    <p class="company">InfoTeCS JSC</p>
-                    <p class="duration">2016 - 2022</p>
+                    <h3 data-i18n="exp_2_title">Team Lead / Senior Software Engineer</h3>
+                    <p class="company" data-i18n="exp_2_company">InfoTeCS JSC</p>
+                    <p class="duration" data-i18n="exp_2_duration">2016 - 2022</p>
                     <ul>
-                        <li>Drove project planning, negotiation, and meticulous record-keeping</li>
-                        <li>Collaborated seamlessly with cross-functional teams across international locations</li>
-                        <li>Played a pivotal role in re-architecting a legacy C++ product incollaboration with product managers</li>
-                        <li>Designed and implemented robust Golang/Python backends for a cutting-edge KVM-based web app</li>
-                        <li>Identified opportunities for process improvement and optimization</li>
-                        <li>Authored comprehensive project documentation</li>
+                        <li data-i18n="exp_2_li_1">Drove project planning, negotiation, and meticulous record-keeping</li>
+                        <li data-i18n="exp_2_li_2">Collaborated seamlessly with cross-functional teams across international locations</li>
+                        <li data-i18n="exp_2_li_3">Played a pivotal role in re-architecting a legacy C++ product in collaboration with product managers</li>
+                        <li data-i18n="exp_2_li_4">Designed and implemented robust Golang/Python backends for a cutting-edge KVM-based web app</li>
+                        <li data-i18n="exp_2_li_5">Identified opportunities for process improvement and optimization</li>
+                        <li data-i18n="exp_2_li_6">Authored comprehensive project documentation</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <h3>Lead / Senior Software Engineer</h3>
-                    <p class="company">Expert Solutions</p>
-                    <p class="duration">2014 - 2016</p>
+                    <h3 data-i18n="exp_3_title">Lead / Senior Software Engineer</h3>
+                    <p class="company" data-i18n="exp_3_company">Expert Solutions</p>
+                    <p class="duration" data-i18n="exp_3_duration">2014 - 2016</p>
                     <ul>
-                        <li>Proficiently debugged and rectified challenging C++ and C# code problems, including program crashes, memory leaks, and performance bottlenecks</li>
-                        <li>Designed and developed cross-platform applications for Windows, Ubuntu, and Debian using C++/Qt</li>
-                        <li>Drove the implementation of new features and functionality</li>
-                        <li>Demonstrated a commitment to continuous learning and technological exploration</li>
-                        <li>Championed the adoption of version control (Mercurial) and bug-tracking (Jira) practices</li>
+                        <li data-i18n="exp_3_li_1">Proficiently debugged and rectified challenging C++ and C# code problems, including program crashes, memory leaks, and performance bottlenecks</li>
+                        <li data-i18n="exp_3_li_2">Designed and developed cross-platform applications for Windows, Ubuntu, and Debian using C++/Qt</li>
+                        <li data-i18n="exp_3_li_3">Drove the implementation of new features and functionality</li>
+                        <li data-i18n="exp_3_li_4">Demonstrated a commitment to continuous learning and technological exploration</li>
+                        <li data-i18n="exp_3_li_5">Championed the adoption of version control (Mercurial) and bug-tracking (Jira) practices</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <p class="company">Freelance</p>
-                    <p class="duration">2016 - 2022</p>
+                    <p class="company" data-i18n="exp_4_company">Freelance</p>
+                    <p class="duration" data-i18n="exp_4_duration">2016 - 2022</p>
                     <ul>
-                        <li>Intelligent Video Surveillance Management System with Object Recognition</li>
-                        <li>Qt and PocketSphinx-based Server Application for Speech Recognition</li>
-                        <li>C++ Extension for PHP for Speech Recognition Server Interaction</li>
-                        <li>RTMP Protocol-based Camera Video Streaming Client</li>
-                        <li>Phillips SpeechMike Microphone Family Library</li>
+                        <li data-i18n="exp_4_li_1">Intelligent Video Surveillance Management System with Object Recognition</li>
+                        <li data-i18n="exp_4_li_2">Qt and PocketSphinx-based Server Application for Speech Recognition</li>
+                        <li data-i18n="exp_4_li_3">C++ Extension for PHP for Speech Recognition Server Interaction</li>
+                        <li data-i18n="exp_4_li_4">RTMP Protocol-based Camera Video Streaming Client</li>
+                        <li data-i18n="exp_4_li_5">Phillips SpeechMike Microphone Family Library</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section class="certificates">
-            <h2>Certificates</h2>
+            <h2 data-i18n="certificates_title">Certificates</h2>
             <div class="certificates-list">
                 <div class="certificate-item">
-                    <h3>ICAgile Certified Professional</h3>
-                    <p class="issuer">ScrumTrek</p>
-                    <p>Agile fundamentals and practices certification</p>
+                    <h3 data-i18n="cert_1_title">ICAgile Certified Professional</h3>
+                    <p class="issuer" data-i18n="cert_1_issuer">ScrumTrek</p>
+                    <p data-i18n="cert_1_desc">Agile fundamentals and practices certification</p>
                 </div>
                 <div class="certificate-item">
-                    <h3>70-680 Windows, Configuring</h3>
-                    <p class="issuer">Microsoft</p>
-                    <p>Microsoft certified professional for Windows configuration</p>
+                    <h3 data-i18n="cert_2_title">70-680 Windows, Configuring</h3>
+                    <p class="issuer" data-i18n="cert_2_issuer">Microsoft</p>
+                    <p data-i18n="cert_2_desc">Microsoft certified professional for Windows configuration</p>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

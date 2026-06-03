@@ -147,21 +147,40 @@ body {
     font-size: 0.9rem;
 }
 
+.lang-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+#lang-switch {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#lang-switch:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
-    .container {
-        padding: 1rem;
+    .lang-toggle {
+        top: 1rem;
+        right: 1rem;
     }
     
-    .hero {
-        padding: 1.5rem 1rem;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
+    #lang-switch {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 }
 .experience-grid {
