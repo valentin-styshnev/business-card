@@ -7,8 +7,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #e0e0e0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     min-height: 100vh;
 }
 
@@ -20,11 +20,11 @@ body {
 
 .hero {
     text-align: center;
-    background: white;
+    background: #1e1e2e;
     border-radius: 20px;
     padding: 2rem 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .profile-image {
@@ -33,35 +33,35 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 4px solid #667eea;
+    border: 4px solid #a78bfa;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #ffffff;
 }
 
 .title {
     font-size: 1.2rem;
-    color: #667eea;
+    color: #a78bfa;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .tagline {
     font-size: 1rem;
-    color: #666;
+    color: #a0a0a0;
     max-width: 500px;
     margin: 0 auto;
 }
 
-.contact, .skills, .experience, .certificates {
-    background: white;
+.contact, .skills, .projects, .experience, .certificates {
+    background: #1e1e2e;
     border-radius: 20px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .contact {
@@ -79,10 +79,10 @@ body {
     font-size: 1.5rem;
 }
 
-.skills h2, .experience h2, .certificates h2 {
+.skills h2, .projects h2, .experience h2, .certificates h2 {
     text-align: center;
     margin-bottom: 1.25rem;
-    color: #333;
+    color: #ffffff;
     font-size: 1.6rem;
 }
 
@@ -98,10 +98,10 @@ body {
     display: flex;
     align-items: center;
     padding: 0.75rem;
-    background: #f8f9fa;
+    background: #2a2a3a;
     border-radius: 8px;
     text-decoration: none;
-    color: #333;
+    color: #e0e0e0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 0.9rem;
 }
@@ -115,7 +115,7 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 0.75rem;
-    color: #667eea;
+    color: #a78bfa;
 }
 
 .skills-grid {
@@ -127,7 +127,7 @@ body {
 .skill-item {
     text-align: center;
     padding: 1rem;
-    background: #f8f9fa;
+    background: #2a2a3a;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -137,14 +137,64 @@ body {
 }
 
 .skill-item h3 {
-    color: #667eea;
+    color: #a78bfa;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
 .skill-item p {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.9rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2a2a3a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item:hover {
+    transform: translateY(-2px);
+}
+
+.project-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-item h3 {
+    color: #a78bfa;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-item p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-item .creator {
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
 }
 
 .lang-toggle {
@@ -191,10 +241,10 @@ body {
 
 .experience-item {
     padding: 1rem;
-    background: #f8f9fa;
+    background: #2a2a3a;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #a78bfa;
 }
 
 .experience-item:hover {
@@ -202,25 +252,25 @@ body {
 }
 
 .experience-item h3 {
-    color: #667eea;
+    color: #a78bfa;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
 .experience-item .company {
     font-weight: bold;
-    color: #333;
+    color: #e0e0e0;
     margin-bottom: 0.3rem;
 }
 
 .experience-item .duration {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .experience-item p:last-child {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.9rem;
     line-height: 1.4;
 }
@@ -231,7 +281,7 @@ body {
 }
 
 .experience-item li {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 0.3rem;
@@ -245,10 +295,10 @@ body {
 
 .certificate-item {
     padding: 1rem;
-    background: #f8f9fa;
+    background: #2a2a3a;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #a78bfa;
 }
 
 .certificate-item:hover {
@@ -256,19 +306,19 @@ body {
 }
 
 .certificate-item h3 {
-    color: #667eea;
+    color: #a78bfa;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
 .certificate-item .issuer {
     font-weight: bold;
-    color: #333;
+    color: #e0e0e0;
     margin-bottom: 0.3rem;
 }
 
 .certificate-item p:last-child {
-    color: #666;
+    color: #a0a0a0;
     font-size: 0.9rem;
     line-height: 1.4;
 }
