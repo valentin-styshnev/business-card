@@ -81,7 +81,7 @@ const translations = {
         project_1_title: "AudioSplit",
         project_1_desc: "Сервис разделения аудио",
         project_1_creator: "Создатель",
-        project_2_title: "Batya",
+        project_2_title: "<Батя говорит>",
         project_2_desc: "Смешные цитаты бати",
         project_2_creator: "Создатель",
         skills_title: "Что я умею",
