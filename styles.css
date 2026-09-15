@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #a78bfa;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -314,4 +329,23 @@ body {
     color: #a0a0a0;
     font-size: 0.9rem;
     line-height: 1.4;
+}
+
+/* Print styles for better accessibility */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .hero, .contact, .skills, .projects, .experience, .certificates {
+        background: white;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    .lang-toggle {
+        display: none;
+    }
 }

@@ -21,6 +21,12 @@ function setLanguage(lang) {
         document.title = translations[lang].title;
     }
 
+    // Update meta description for SEO (if available in translations)
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription && translations[lang].meta_description) {
+        metaDescription.setAttribute('content', translations[lang].meta_description);
+    }
+
     // Update the toggle button text
     const btn = document.getElementById('lang-switch');
     if (btn) {
