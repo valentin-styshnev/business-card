@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #a78bfa;
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-    z-index: 100;
-}
-
-.skip-link:focus {
-    top: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
