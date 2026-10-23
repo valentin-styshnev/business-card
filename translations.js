@@ -4,6 +4,7 @@ const translations = {
         title: "Valentin Styshnev - Lead / Senior Software Engineer",
         title_sub: "Lead / Senior Software Engineer",
         meta_description: "Valentin Styshnev is a Lead / Senior Software Engineer specializing in Golang, C++, and Python. Expert in designing distributed systems, backend development, and team leadership. Available for remote work worldwide.",
+        meta_summary: "Valentin Styshnev is a Lead/Senior Software Engineer with 10+ years of experience in Golang, C++, and Python. Specializes in distributed systems, backend development, and team leadership. Available for remote work worldwide. Contact: vstyshnev.es@gmail.com",
         tagline: "Results-driven Senior Software Engineer/Team Lead with expertise in Golang, C++ and Python. Proven ability to design and develop innovative applications for various platforms. Skilled in project management, team collaboration, and driving process optimization. Ready to lead and deliver exceptional software solutions to meet strategic objectives.",
         contact_title: "Get In Touch",
         linkedin: "LinkedIn",
@@ -69,13 +70,22 @@ const translations = {
         cert_1_desc: "Agile fundamentals and practices certification",
         cert_2_title: "70-680 Windows, Configuring",
         cert_2_issuer: "Microsoft",
-        cert_2_desc: "Microsoft certified professional for Windows configuration"
+        cert_2_desc: "Microsoft certified professional for Windows configuration",
+        faq_1_q: "What technologies does Valentin Styshnev specialize in?",
+        faq_1_a: "Valentin Styshnev specializes in Golang, Python, C++, RESTful APIs, gRPC, PostgreSQL, Redis, Kafka, Docker, Kubernetes, and DevOps practices.",
+        faq_2_q: "Is Valentin available for remote work?",
+        faq_2_a: "Yes, Valentin is available for remote work worldwide as indicated by the TELECOMMUTE job location type.",
+        faq_3_q: "What is Valentin's experience level?",
+        faq_3_a: "Valentin Styshnev is a Lead / Senior Software Engineer with over 10 years of experience, currently working at AB Handshake Corporation since 2022.",
+        faq_4_q: "How can I contact Valentin Styshnev?",
+        faq_4_a: "You can contact Valentin Styshnev via email at vstyshnev.es@gmail.com, LinkedIn at https://www.linkedin.com/in/valentin-styshnev, GitHub at https://github.com/valentin-styshnev, or Telegram at https://t.me/vstyshnev."
     },
     ru: {
         name: "Валентин Стышнёв",
         title: "Валентин Стышнёв - Lead / Senior Software Engineer",
         title_sub: "Lead / Senior Software Engineer",
         meta_description: "Валентин Стышнёв - Lead / Senior Software Engineer, специализирующийся на Golang, C++ и Python. Эксперт в проектировании распределенных систем, backend-разработке и лидерстве команды. Доступен для удаленной работы по всему миру.",
+        meta_summary: "Валентин Стышнёв - Lead/Senior Software Engineer с опытом более 10 лет в Golang, C++ и Python. Специализируется на распределенных системах, backend-разработке и лидерстве команды. Доступен для удаленной работы по всему миру. Контакт: vstyshnev.es@gmail.com",
         tagline: "Целеустремленный Senior Software Engineer/Team Lead с экспертизой в Golang, C++ и Python. Имею подтвержденный опыт проектирования и разработки инновационных приложений для различных платформ. Обладаю навыками управления проектами, командной работы и оптимизации процессов. Готов руководить и предоставлять исключительные программные решения для достижения стратегических целей.",
         contact_title: "Связаться со мной",
         linkedin: "LinkedIn",
@@ -141,6 +151,14 @@ const translations = {
         cert_1_desc: "Сертификация по основам и практикам Agile",
         cert_2_title: "70-680 Windows, Configuring",
         cert_2_issuer: "Microsoft",
-        cert_2_desc: "Сертифицированный специалист Microsoft по настройке Windows"
+        cert_2_desc: "Сертифицированный специалист Microsoft по настройке Windows",
+        faq_1_q: "Какими технологиями специализируется Валентин Стышнёв?",
+        faq_1_a: "Валентин Стышнёв специализируется на Golang, Python, C++, RESTful APIs, gRPC, PostgreSQL, Redis, Kafka, Docker, Kubernetes и практиках DevOps.",
+        faq_2_q: "Доступен ли Валентин для удаленной работы?",
+        faq_2_a: "Да, Валентин доступен для удаленной работы по всему миру, что указано в типе места работы TELECOMMUTE.",
+        faq_3_q: "Какой уровень опыта у Валентина?",
+        faq_3_a: "Валентин Стышнёв - Lead / Senior Software Engineer с опытом более 10 лет, сейчас работает в AB Handshake Corporation с 2022 года.",
+        faq_4_q: "Как связаться с Валентином Стышнёвым?",
+        faq_4_a: "Вы можете связаться с Валентином Стышнёвым по электронной почте vstyshnev.es@gmail.com, в LinkedIn по адресу https://www.linkedin.com/in/valentin-styshnev, на GitHub по адресу https://github.com/valentin-styshnev или в Telegram по адресу https://t.me/vstyshnev."
     }
 };

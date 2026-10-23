@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://valentin.styshnev.ru/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://valentin.styshnev.ru/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://valentin.styshnev.ru/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://valentin.styshnev.ru/" />
+    <image:image>
+      <image:loc>https://valentin.styshnev.ru/profile.jpg</image:loc>
+      <image:caption>Valentin Styshnev - Lead / Senior Software Engineer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valentin.styshnev.ru/og-image.png</image:loc>
+      <image:caption>AudioSplit project - Audio splitting service</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valentin.styshnev.ru/og-image.svg</image:loc>
+      <image:caption>Batya project - Dad's funny quotes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://valentin.styshnev.ru/og-image-constellations.svg</image:loc>
+      <image:caption>Constellation Gallery - Gallery of star constellations</image:caption>
+    </image:image>
   </url>
 </urlset>

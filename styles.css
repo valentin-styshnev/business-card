@@ -334,3 +334,10 @@ body {
         display: none;
     }
 }
+
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
