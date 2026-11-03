@@ -118,11 +118,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="lang-toggle">
+    <nav class="lang-toggle" aria-label="Language selection">
         <button id="lang-switch" onclick="toggleLanguage()" aria-label="Switch language between English and Russian">RU</button>
-    </div>
+    </nav>
 
-    <div class="container" id="main-content">
+    <main class="container" id="main-content">
         <header class="hero">
             <div class="profile-section">
                 <img src="profile.jpg" alt="Valentin Styshnev" class="profile-image" width="150" height="150" loading="eager">
@@ -136,17 +136,17 @@
             <h2 data-i18n="projects_title">Personal Projects</h2>
             <div class="projects-grid">
                 <a href="https://audiosplit.ru" class="project-item" target="_blank" rel="noopener noreferrer">
-                    <img src="og-image.png" alt="AudioSplit project screenshot" class="project-image" width="300" height="158" loading="lazy">
+                    <img src="og-image.png" alt="AudioSplit project - Audio splitting service screenshot" class="project-image" width="300" height="158" loading="lazy" decoding="async">
                     <h3 data-i18n="project_1_title">AudioSplit</h3>
                     <p data-i18n="project_1_desc">Audio splitting service</p>
                 </a>
                 <a href="https://batya.styshnev.ru" class="project-item" target="_blank" rel="noopener noreferrer">
-                    <img src="og-image.svg" alt="Batya project screenshot" class="project-image" width="300" height="158" loading="lazy">
+                    <img src="og-image.svg" alt="Batya project - Dad's funny quotes screenshot" class="project-image" width="300" height="158" loading="lazy" decoding="async">
                     <h3 data-i18n="project_2_title">Batya</h3>
                     <p data-i18n="project_2_desc">Personal project</p>
                 </a>
                 <a href="https://stars-gallery.ru" class="project-item" target="_blank" rel="noopener noreferrer">
-                    <img src="og-image-constellations.svg" alt="Constellation Gallery project screenshot" class="project-image" width="300" height="158" loading="lazy">
+                    <img src="og-image-constellations.svg" alt="Constellation Gallery - Gallery of star constellations screenshot" class="project-image" width="300" height="158" loading="lazy" decoding="async">
                     <h3 data-i18n="project_3_title">Constellation Gallery</h3>
                     <p data-i18n="project_3_desc">Gallery of star constellations</p>
                 </a>
@@ -282,7 +282,11 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024-2026 Valentin Styshnev. All rights reserved.</p>
+    </footer>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

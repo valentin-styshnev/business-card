@@ -27,6 +27,12 @@ function setLanguage(lang) {
         metaDescription.setAttribute('content', translations[lang].meta_description);
     }
 
+    // Update meta summary for GEO (if available in translations)
+    const metaSummary = document.querySelector('meta[name="summary"]');
+    if (metaSummary && translations[lang].meta_summary) {
+        metaSummary.setAttribute('content', translations[lang].meta_summary);
+    }
+
     // Update the toggle button text
     const btn = document.getElementById('lang-switch');
     if (btn) {
